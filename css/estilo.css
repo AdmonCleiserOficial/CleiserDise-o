@@ -34,8 +34,8 @@ body {
     font-size: 12px;
     line-height: 25px;
     text-align: center;
-    border-top: 2px solid #0086afe1;
-    border-bottom: 2px solid #0086afe1;
+    border-top: 2px solid #002df5e1;
+    border-bottom: 2px solid #002df5e1;
     transition: all .5s ease;
 }
 
@@ -44,8 +44,8 @@ body {
 }
 
 .contenedor-form .toggle:hover{
-    border-top: 2px solid hsl(59, 94%, 28%);
-    border-bottom: 2px solid #8d8b04;
+    border-top: 2px solid hsl(340, 23%, 97%);
+    border-bottom: 2px solid hsl(340, 23%, 97%);
 }
 
 .toggle:hover{
