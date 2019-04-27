@@ -30,13 +30,9 @@
 .carousel__slide{
 	flex: 0 0 33.333%;
 	margin: auto;
-	transition: transform 0.3s ease;
-
-
-
-
-
-    &.active .carousel__slide-inner{
+    transition: transform 0.3s ease;
+}
+    .active .carousel__slide-inner{
         background-color: mediumspringgreen;
         height: 60vh;
 	align-content: center;
@@ -44,9 +40,8 @@
 	align-items: center;
 	width: auto;
     }
-    &.selected .carousel__slide-inner{
+.selected .carousel__slide-inner{
         border: 5px solid dodgerblue;
-    }
     @media (max-width: 768px){
         flex: 0 0 100%;
         transform: translateX(-100%);
