@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="firefox">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/carrusel.css">
-  <link rel="stylesheet" href="css/W303W.css">
-  <link rel="stylesheet" href="slick/slick/slick.css">
-  <link rel="stylesheet" href="slick/slick/slick.scss">
-  <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <meta name="viewport" content="width=device-width">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Bitter" rel="stylesheet" type="text/css">
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='dist/css/1.0.0/bootstrap3-showmanyslideonecarousel.min.css'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/carrusel.scss">
+  <link rel="stylesheet" type="text/css" href="css/W303W.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.scss">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css">
+  <link rel="stylesheet/less" href="css/showmanyslideonecarousel.less">
+  <script src="js/showmanyslideonecarousel.js"></script>
+  <script src="js/hey.js"></script>
+  <script src="js/Gruntfile.js"></script>
+  <script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
   <script src="slick/slick.jquery.json"></script>
   <script src="slick/component.json"></script>
   <script src="slick/slick/slick.js"></script>
   <script src="slick/slick/slick.min.js"></script>
+  <script src="js/carrusel.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap/bootstrap.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
@@ -159,95 +169,92 @@
 
 <!---Carousel de Productos-->
 
-<section class="variable slider slick-initialized slick-slider slick-dotted ">
-
-<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
-<div class="slick-list draggable">
-  <div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(-750px, 0px, 0px);">
-
-<div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-  <div>
-    <div style="width: 100%; display: inline-block;">
-    <img src="http://placehold.it/350x300?text=5">
-  </div>
-</div>
-</div>
-<div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-    <div>
-      <div style="width: 100%; display: inline-block;">
-      <img src="http://placehold.it/350x300?text=5">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>Nuestras Promociones y Productos tu decides.</h2>
     </div>
-  </div>
-  </div>
-  <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-      <div>
-        <div style="width: 100%; display: inline-block;">
-        <img src="http://placehold.it/350x300?text=5">
-      </div>
-    </div>
-    </div>
-    <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-        <div>
-          <div style="width: 100%; display: inline-block;">
-          <img src="http://placehold.it/350x300?text=5">
-        </div>
-      </div>
-      </div>
-      <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-          <div>
-            <div style="width: 100%; display: inline-block;">
-            <img src="http://placehold.it/350x300?text=5">
-          </div>
-        </div>
-        </div>
-        <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-            <div>
-              <div style="width: 100%; display: inline-block;">
-              <img src="http://placehold.it/350x300?text=5">
+  </div>  
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel carousel-showmanymoveone slide" id="carouselABC">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/0054A6/fff/&amp;text=A" class="img-responsive">
+              </a>
             </div>
           </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/002d5a/fff/&amp;text=B" class="img-responsive">
+              </a>
+            </div>
           </div>
-          <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide74" aria-describedby="slick-slide-control74" tabindex="-1">
-              <div>
-                <div style="width: 100%; display: inline-block;">
-                <img src="http://placehold.it/350x300?text=5">
-              </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/d6d6d6/333&amp;text=C" class="img-responsive">
+              </a>
             </div>
+          </div>          
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/002040/eeeeee&amp;text=D" class="img-responsive">
+              </a>
             </div>
-<div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1">
-  <div>
-    <div style="width: 100%; display: inline-block;">
-    <img src="http://placehold.it/350x300?text=5">
-  </div>
-  </div>
+          </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/0054A6/fff/&amp;text=E" class="img-responsive">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/002d5a/fff/&amp;text=F" class="img-responsive">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/eeeeee&amp;text=G" class="img-responsive">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#">
+                <img src="http://placehold.it/500/40a1ff/002040&amp;text=H" class="img-responsive">
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carouselABC" data-slide="prev">
+          <i class="glyphicon glyphicon-chevron-left">
+          </i>
+        </a>
+        <a class="right carousel-control" href="#carouselABC" data-slide="next">
+          <i class="glyphicon glyphicon-chevron-right">
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>  
 </div>
 
-  </div>
-</div>
-
-
-  <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
-  <ul class="slick-dots" style="display: block;" role="tablist">
-    <li class="" role="presentation">
-      <button type="button" role="tab" id="slick-slide-control70" aria-controls="slick-slide70" aria-label="1 of 6" tabindex="-1">1</button>
-  </li>
-  <li role="presentation" class="slick-active">
-    <button type="button" role="tab" id="slick-slide-control71" aria-controls="slick-slide71" aria-label="2 of 6" tabindex="0" aria-selected="true">2</button>
-  </li>
-  <li role="presentation" class="">
-    <button type="button" role="tab" id="slick-slide-control72" aria-controls="slick-slide72" aria-label="3 of 6" tabindex="-1">3</button>
-  </li>
-  <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control73" aria-controls="slick-slide73" aria-label="4 of 6" tabindex="-1">4</button>
-  </li>
-  <li role="presentation" class="">
-    <button type="button" role="tab" id="slick-slide-control74" aria-controls="slick-slide74" aria-label="5 of 6" tabindex="-1">5</button>
-  </li>
-  <li role="presentation" class="">
-    <button type="button" role="tab" id="slick-slide-control75" aria-controls="slick-slide75" aria-label="6 of 6" tabindex="-1">6</button>
-  </li>
-    </ul>
-
-</section>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+  <script src='dist/css/1.0.0/bootstrap3-showmanyslideonecarousel.min.js'></script>
+  <script>
+    (function(){
+      $('#carouselABC').carousel({ interval: 3600 });
+    }());
+  </script>
 
   <!---Fin Carrousel de Productos-->
 
@@ -269,7 +276,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/carrusel.js"></script>
 
 </body>
 </html>
