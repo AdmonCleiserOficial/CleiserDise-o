@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="icon" type="img/png" href="Images/icons8-teamwork-48.png">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+        position: relative !important;
+    }
+    
+    .loginBox {
+        width: 500px !important;
+        background: rgb(205, 250, 255);
+        background: linear-gradient(264deg, rgba(205, 250, 255, 1) 0%, rgba(0, 215, 255, 1) 0%, rgba(204, 255, 254, 1) 0%, rgb(99, 209, 243) 100%);
+    }
+    
+    input {
+        background-color: rgb(235, 243, 235) !important;
+        font-weight: 800 !important;
+        color: black !important;
+    }
+    
+    .w-100 {
+        height: auto !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: rgb(27, 27, 27) !important;
+        font-size: 20px !important;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .loginBox {
+        height: 59%;
+    }
+</style>
+
+<body>
+
+
+    <input type="checkbox" id="check" />
+
+    <label for="check" class="dispare" style="
+             background: rgba(0, 0, 0, 0.493);border-radius: 50%;">
+      <svg viewBox="0 0 30 30" width="30" height="30">
+         <path id="one" d="M4 10h22M4" stroke="#fff" stroke-width="4" stroke-linecap="round"></path>
+         <path id="two" d="M4 20h22M4" stroke="#fff" stroke-width="4" stroke-linecap="round"></path>
+      </svg><b style="background-color: rgba(234, 255, 249, 0.76)">Menu</b>
+   </label>
+
+    <aside>
+        <div class="top m-2">
+            <br>
+            <h2 class="text-white text-center">CleiserMenu</h2>
+            <ul class="d-flex flex-column align-content-center justify-content-center text-decoration-none text-white-50">
+                <br>
+                <li class="lia text-center mt-2 font-weight-bold text-decoration-none"> <a href="">Home
+               </a> </li>
+                <li class="lib text-center mt-2 font-weight-bold text-decoration-none"> <a href="">
+                  Login</a> </li>
+                <li class="lic text-center mt-2 font-weight-bold text-decoration-none"> <a href="">Registrate </a> </li>
+                <li class="lid text-center mt-2 font-weight-bold text-decoration-none"> <a href="">Cl
+                  Business Group </a> </li>
+                <li class="lie text-center mt-2 font-weight-bold"> <a href=""> Contacto</a> </li>
+            </ul>
+        </div>
+        <div class="bottom mt-auto">
+            <p>&copy; 2019 Cleiser Team</p>
+        </div>
+    </aside>
+    <article>
+        <div class="wrapper">
+            <div class="content d-flex justify-content-center">
+                <div class="contenedor-form border  shadow-lg mx-auto loginBox">
+                    <div class="d-flex">
+                        <div class="toggle ml-auto">
+                            <span><strong>Crear Cuenta</strong></span>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex">
+                        <div class="formulario login  w-100 order-0">
+                            <img class="col-3 align-center" src="images/logo.jpg " alt="">
+                            <h2 class="text-center">
+                                <b>Iniciar Sesión </b> </h2>
+                            <form action="">
+                                <input type="text" placeholder="Usuario" required>
+                                <input type="password" placeholder="Password" required>
+                                <input type="submit" value="Iniciar Sesion" style="background-color: rgba(0, 140, 255, 0.712) !important; font-weight: bold;color:white !important;">
+                            </form> <br><br>
+
+                            <div class="reset-password">
+                                <a href="#">Olvide mi Clave</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="formulario signup   w-100 order-1 ">
+                            <img class="col-3 align-center" src="images/logo.jpg " alt="">
+                            <h2 class="text-center">
+                                <b>Registrarse</b>
+                            </h2>
+                            <form action="">
+                                <input type="text" placeholder="Nombre de usuario" required>
+                                <input type="password" placeholder="Crear Password" required>
+                                <input type="email" placeholder="Correo electrónico" required>
+                                <input type="text" placeholder="Id de referido">
+                                <input type="submit" value="Crear mi cuenta" style="background-color: rgba(0, 140, 255, 0.712) !important; font-weight: bold;color:white !important;">
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+    </article>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/anime.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/com.js"></script>
+</body>
+
+</html>
