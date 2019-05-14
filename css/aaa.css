@@ -1,0 +1,28 @@
+.border-red {
+  border-color: red !important;
+  background-color: rgba(255, 12, 12, 0.014) !important;
+  border-bottom-color: red !important;
+}
+
+.error {
+  color: red;
+  font-style: oblique;
+}
+
+.border-green {
+  border-color: green !important;
+
+  font-weight: bold !important;
+}
+
+.border-success {
+  background-color: white !important;
+}
+
+.ok {
+  border-bottom: 2px solid green;
+  font-weight: 900;
+  font-style: oblique;
+  color: green;
+
+}

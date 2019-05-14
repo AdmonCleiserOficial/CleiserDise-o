@@ -1,71 +1,65 @@
-const cambie = document.querySelector('.toggle');
-const singUp = document.querySelector('.signup');
-const login = document.querySelector('.login');
-const dispare = document.querySelector('.dispare');
+const cambie = document.querySelector(".toggle");
+const singUp = document.querySelector(".signup");
+const login = document.querySelector(".login");
+const dispare = document.querySelector(".dispare");
+const letrerito = document.querySelector("#count");
 let i = 1;
 let tiempoInicial = 50;
 let differenceTime = 100;
 let temp;
-dispare.addEventListener('click', () => {
 
-    metaTiempo('.lia', 'bounceInRight', tiempoInicial);
+dispare.addEventListener("click", () => {
+    metaTiempo(".lia", "bounceInRight", tiempoInicial);
     tiempoInicial += differenceTime;
-    metaTiempo('.lib', 'bounceInRight', tiempoInicial);
+    metaTiempo(".lib", "bounceInRight", tiempoInicial);
     tiempoInicial += differenceTime;
-    metaTiempo('.lic', 'bounceInRight', tiempoInicial);
+    metaTiempo(".lic", "bounceInRight", tiempoInicial);
     tiempoInicial += differenceTime;
-    metaTiempo('.lid', 'bounceInRight', tiempoInicial);
+    metaTiempo(".lid", "bounceInRight", tiempoInicial);
     tiempoInicial += differenceTime;
-    metaTiempo('.lie', 'bounceInRight', tiempoInicial);
+    metaTiempo(".lie", "bounceInRight", tiempoInicial);
 });
 
 function metaTiempo(clase, animacion, tiempo) {
     setTimeout(() => {
-        animateCSS(clase, animacion)
+        animateCSS(clase, animacion);
     }, tiempo);
 }
-cambie.addEventListener('click', () => {
+cambie.addEventListener("click", () => {
     i += 1;
-
     if (i % 2 == 0) {
-
-        animateCSS('.login', 'bounceOutDown');
+        animateCSS(".login", "bounceOutDown");
         login.style.opacity = "0";
-        singUp.classList.add('encimade');
-
-        animateCSS('.signup', 'bounceInRight');
+        singUp.classList.add("encimade");
+        animateCSS(".signup", "bounceInRight");
+        letrerito.innerHTML = "Iniciar Sesión";
         setTimeout(() => {
             singUp.style.display = "block";
             singUp.style.opacity = "1";
         }, 600);
-
     } else {
         booleano = true;
         singUp.style.display = "none";
         singUp.style.opacity = "0";
-
-        animateCSS('.login', 'bounceInRight');
-
-
+        animateCSS(".login", "bounceInRight");
+        letrerito.innerHTML = "Crear Cuenta";
         setTimeout(() => {
             login.style.opacity = "1";
             singUp.style.display = "0";
         }, 20);
     }
-
-
 });
 
 function animateCSS(element, animationName, callback) {
-    const node = document.querySelector(element)
-    node.classList.add('animated', animationName, "slow");
+    const node = document.querySelector(element);
+    node.classList.add("animated", animationName, "fast");
 
     function handleAnimationEnd() {
-        node.classList.remove('animated', animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
+        node.classList.remove("animated", animationName);
+        node.removeEventListener("animationend", handleAnimationEnd);
 
-        if (typeof callback === 'function') callback()
+        if (typeof callback === "function") callback();
     }
 
-    node.addEventListener('animationend', handleAnimationEnd)
+    node.addEventListener("animationend", handleAnimationEnd);
 }
